@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3F03CB1DF097F9006C4A1B /* BigExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F03CA1DF097F9006C4A1B /* BigExplosion.sks */; };
+		1D4F0AE31DE05D4900D41ACF /* theBoldFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F0AE21DE05D4900D41ACF /* theBoldFont.ttf */; };
+		1D4F0AE71DE05F3B00D41ACF /* blowBrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F0AE61DE05F3B00D41ACF /* blowBrush.ttf */; };
+		1D8D93211DDDAFC900748FFE /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D93201DDDAFC900748FFE /* GameOverScene.swift */; };
+		1D8D93231DDE05EE00748FFE /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D93221DDE05EE00748FFE /* MainMenuScene.swift */; };
+		1DA732961DECC82B0080651A /* MenusBackground.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1DA732951DECC82B0080651A /* MenusBackground.sks */; };
+		1DA732981DED86D20080651A /* SettingsMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA732971DED86D20080651A /* SettingsMenuScene.swift */; };
+		1DA7329C1DEDC2920080651A /* PauseMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7329B1DEDC2920080651A /* PauseMenuScene.swift */; };
+		1DAE1DCB1DE7629600D98D9C /* MovingStars.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1DAE1DCA1DE7629600D98D9C /* MovingStars.sks */; };
+		1DAE1DCF1DE7646000D98D9C /* ShipTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1DAE1DCE1DE7646000D98D9C /* ShipTrail.sks */; };
+		1DAE1DD11DE8591A00D98D9C /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1DAE1DD01DE8591A00D98D9C /* Explosion.sks */; };
+		1DB15E721DF0251F0024F2D2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB15E711DF0251F0024F2D2 /* CoreMotion.framework */; };
+		1DBDD9681DD9BBA4004975F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDD9671DD9BBA4004975F3 /* AppDelegate.swift */; };
+		1DBDD96A1DD9BBA4004975F3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDD9691DD9BBA4004975F3 /* GameScene.sks */; };
+		1DBDD96C1DD9BBA4004975F3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDD96B1DD9BBA4004975F3 /* Actions.sks */; };
+		1DBDD96E1DD9BBA4004975F3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDD96D1DD9BBA4004975F3 /* GameScene.swift */; };
+		1DBDD9701DD9BBA4004975F3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDD96F1DD9BBA4004975F3 /* GameViewController.swift */; };
+		1DBDD9731DD9BBA4004975F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDD9711DD9BBA4004975F3 /* Main.storyboard */; };
+		1DBDD9751DD9BBA4004975F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDD9741DD9BBA4004975F3 /* Assets.xcassets */; };
+		1DBDD9781DD9BBA4004975F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDD9761DD9BBA4004975F3 /* LaunchScreen.storyboard */; };
+		1DBDD9831DD9BBA4004975F3 /* Milky_Way_MeltdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDD9821DD9BBA4004975F3 /* Milky_Way_MeltdownTests.swift */; };
+		1DBDD98E1DD9BBA4004975F3 /* Milky_Way_MeltdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDD98D1DD9BBA4004975F3 /* Milky_Way_MeltdownUITests.swift */; };
+		1DE25E121E2FBC2A000B0176 /* bulletEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DE25E111E2FBC2A000B0176 /* bulletEffect.wav */; };
+		1DEF00721E0297200082C975 /* InstructionsMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF00711E0297200082C975 /* InstructionsMenuScene.swift */; };
+		1DFEE36B1E281ACB00F51A85 /* backgroundMusic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1DFEE36A1E281ACB00F51A85 /* backgroundMusic.m4a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DBDD97F1DD9BBA4004975F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DBDD95C1DD9BBA3004975F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DBDD9631DD9BBA3004975F3;
+			remoteInfo = "Milky Way Meltdown";
+		};
+		1DBDD98A1DD9BBA4004975F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DBDD95C1DD9BBA3004975F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DBDD9631DD9BBA3004975F3;
+			remoteInfo = "Milky Way Meltdown";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D3F03CA1DF097F9006C4A1B /* BigExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BigExplosion.sks; sourceTree = "<group>"; };
+		1D4F0AE21DE05D4900D41ACF /* theBoldFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = theBoldFont.ttf; sourceTree = "<group>"; };
+		1D4F0AE61DE05F3B00D41ACF /* blowBrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blowBrush.ttf; sourceTree = "<group>"; };
+		1D8D93201DDDAFC900748FFE /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		1D8D93221DDE05EE00748FFE /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		1DA732951DECC82B0080651A /* MenusBackground.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenusBackground.sks; sourceTree = "<group>"; };
+		1DA732971DED86D20080651A /* SettingsMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMenuScene.swift; sourceTree = "<group>"; };
+		1DA7329B1DEDC2920080651A /* PauseMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseMenuScene.swift; sourceTree = "<group>"; };
+		1DAE1DCA1DE7629600D98D9C /* MovingStars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MovingStars.sks; sourceTree = "<group>"; };
+		1DAE1DCE1DE7646000D98D9C /* ShipTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShipTrail.sks; sourceTree = "<group>"; };
+		1DAE1DD01DE8591A00D98D9C /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		1DB15E711DF0251F0024F2D2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1DBDD9641DD9BBA4004975F3 /* Milkyway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milkyway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBDD9671DD9BBA4004975F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DBDD9691DD9BBA4004975F3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		1DBDD96B1DD9BBA4004975F3 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		1DBDD96D1DD9BBA4004975F3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		1DBDD96F1DD9BBA4004975F3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1DBDD9721DD9BBA4004975F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DBDD9741DD9BBA4004975F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DBDD9771DD9BBA4004975F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DBDD9791DD9BBA4004975F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBDD97E1DD9BBA4004975F3 /* MilkywayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MilkywayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBDD9821DD9BBA4004975F3 /* Milky_Way_MeltdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milky_Way_MeltdownTests.swift; sourceTree = "<group>"; };
+		1DBDD9841DD9BBA4004975F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBDD9891DD9BBA4004975F3 /* MilkywayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MilkywayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBDD98D1DD9BBA4004975F3 /* Milky_Way_MeltdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milky_Way_MeltdownUITests.swift; sourceTree = "<group>"; };
+		1DBDD98F1DD9BBA4004975F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE25E111E2FBC2A000B0176 /* bulletEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bulletEffect.wav; sourceTree = "<group>"; };
+		1DEF00711E0297200082C975 /* InstructionsMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsMenuScene.swift; sourceTree = "<group>"; };
+		1DFEE36A1E281ACB00F51A85 /* backgroundMusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic.m4a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DBDD9611DD9BBA3004975F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB15E721DF0251F0024F2D2 /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBDD97B1DD9BBA4004975F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBDD9861DD9BBA4004975F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D3F03CC1DF09B73006C4A1B /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				1D8D93221DDE05EE00748FFE /* MainMenuScene.swift */,
+				1DEF00711E0297200082C975 /* InstructionsMenuScene.swift */,
+				1DA732971DED86D20080651A /* SettingsMenuScene.swift */,
+				1DA7329B1DEDC2920080651A /* PauseMenuScene.swift */,
+				1DA732951DECC82B0080651A /* MenusBackground.sks */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		1D3F03CD1DF09B8C006C4A1B /* Sound & Music */ = {
+			isa = PBXGroup;
+			children = (
+				1DFEE36A1E281ACB00F51A85 /* backgroundMusic.m4a */,
+				1DE25E111E2FBC2A000B0176 /* bulletEffect.wav */,
+			);
+			name = "Sound & Music";
+			sourceTree = "<group>";
+		};
+		1DA732991DEDBBF70080651A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1D4F0AE21DE05D4900D41ACF /* theBoldFont.ttf */,
+				1D4F0AE61DE05F3B00D41ACF /* blowBrush.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		1DA7329A1DEDBC090080651A /* Game Setup */ = {
+			isa = PBXGroup;
+			children = (
+				1DBDD96D1DD9BBA4004975F3 /* GameScene.swift */,
+				1D8D93201DDDAFC900748FFE /* GameOverScene.swift */,
+				1DBDD96F1DD9BBA4004975F3 /* GameViewController.swift */,
+				1DAE1DCA1DE7629600D98D9C /* MovingStars.sks */,
+				1DAE1DCE1DE7646000D98D9C /* ShipTrail.sks */,
+				1D3F03CA1DF097F9006C4A1B /* BigExplosion.sks */,
+				1DAE1DD01DE8591A00D98D9C /* Explosion.sks */,
+			);
+			name = "Game Setup";
+			sourceTree = "<group>";
+		};
+		1DB15E701DF0251F0024F2D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DB15E711DF0251F0024F2D2 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DBDD95B1DD9BBA3004975F3 = {
+			isa = PBXGroup;
+			children = (
+				1DBDD9661DD9BBA4004975F3 /* Milkyway Meltdown */,
+				1DBDD9811DD9BBA4004975F3 /* Milky Way MeltdownTests */,
+				1DBDD98C1DD9BBA4004975F3 /* Milky Way MeltdownUITests */,
+				1DBDD9651DD9BBA4004975F3 /* Products */,
+				1DB15E701DF0251F0024F2D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DBDD9651DD9BBA4004975F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DBDD9641DD9BBA4004975F3 /* Milkyway.app */,
+				1DBDD97E1DD9BBA4004975F3 /* MilkywayTests.xctest */,
+				1DBDD9891DD9BBA4004975F3 /* MilkywayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DBDD9661DD9BBA4004975F3 /* Milkyway Meltdown */ = {
+			isa = PBXGroup;
+			children = (
+				1DBDD9671DD9BBA4004975F3 /* AppDelegate.swift */,
+				1DBDD9691DD9BBA4004975F3 /* GameScene.sks */,
+				1DBDD96B1DD9BBA4004975F3 /* Actions.sks */,
+				1D3F03CD1DF09B8C006C4A1B /* Sound & Music */,
+				1DA7329A1DEDBC090080651A /* Game Setup */,
+				1D3F03CC1DF09B73006C4A1B /* Menus */,
+				1DBDD9711DD9BBA4004975F3 /* Main.storyboard */,
+				1DBDD9741DD9BBA4004975F3 /* Assets.xcassets */,
+				1DA732991DEDBBF70080651A /* Fonts */,
+				1DBDD9761DD9BBA4004975F3 /* LaunchScreen.storyboard */,
+				1DBDD9791DD9BBA4004975F3 /* Info.plist */,
+			);
+			name = "Milkyway Meltdown";
+			path = "Milky Way Meltdown";
+			sourceTree = "<group>";
+		};
+		1DBDD9811DD9BBA4004975F3 /* Milky Way MeltdownTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DBDD9821DD9BBA4004975F3 /* Milky_Way_MeltdownTests.swift */,
+				1DBDD9841DD9BBA4004975F3 /* Info.plist */,
+			);
+			path = "Milky Way MeltdownTests";
+			sourceTree = "<group>";
+		};
+		1DBDD98C1DD9BBA4004975F3 /* Milky Way MeltdownUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DBDD98D1DD9BBA4004975F3 /* Milky_Way_MeltdownUITests.swift */,
+				1DBDD98F1DD9BBA4004975F3 /* Info.plist */,
+			);
+			path = "Milky Way MeltdownUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DBDD9631DD9BBA3004975F3 /* Milkyway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBDD9921DD9BBA4004975F3 /* Build configuration list for PBXNativeTarget "Milkyway" */;
+			buildPhases = (
+				1DBDD9601DD9BBA3004975F3 /* Sources */,
+				1DBDD9611DD9BBA3004975F3 /* Frameworks */,
+				1DBDD9621DD9BBA3004975F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Milkyway;
+			productName = "Milky Way Meltdown";
+			productReference = 1DBDD9641DD9BBA4004975F3 /* Milkyway.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DBDD97D1DD9BBA4004975F3 /* MilkywayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBDD9951DD9BBA4004975F3 /* Build configuration list for PBXNativeTarget "MilkywayTests" */;
+			buildPhases = (
+				1DBDD97A1DD9BBA4004975F3 /* Sources */,
+				1DBDD97B1DD9BBA4004975F3 /* Frameworks */,
+				1DBDD97C1DD9BBA4004975F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DBDD9801DD9BBA4004975F3 /* PBXTargetDependency */,
+			);
+			name = MilkywayTests;
+			productName = "Milky Way MeltdownTests";
+			productReference = 1DBDD97E1DD9BBA4004975F3 /* MilkywayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DBDD9881DD9BBA4004975F3 /* MilkywayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBDD9981DD9BBA4004975F3 /* Build configuration list for PBXNativeTarget "MilkywayUITests" */;
+			buildPhases = (
+				1DBDD9851DD9BBA4004975F3 /* Sources */,
+				1DBDD9861DD9BBA4004975F3 /* Frameworks */,
+				1DBDD9871DD9BBA4004975F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DBDD98B1DD9BBA4004975F3 /* PBXTargetDependency */,
+			);
+			name = MilkywayUITests;
+			productName = "Milky Way MeltdownUITests";
+			productReference = 1DBDD9891DD9BBA4004975F3 /* MilkywayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DBDD95C1DD9BBA3004975F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kleit Duka";
+				TargetAttributes = {
+					1DBDD9631DD9BBA3004975F3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9AB7L7MV4X;
+						ProvisioningStyle = Automatic;
+					};
+					1DBDD97D1DD9BBA4004975F3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9AB7L7MV4X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1DBDD9631DD9BBA3004975F3;
+					};
+					1DBDD9881DD9BBA4004975F3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9AB7L7MV4X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1DBDD9631DD9BBA3004975F3;
+					};
+				};
+			};
+			buildConfigurationList = 1DBDD95F1DD9BBA3004975F3 /* Build configuration list for PBXProject "Milkyway" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DBDD95B1DD9BBA3004975F3;
+			productRefGroup = 1DBDD9651DD9BBA4004975F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DBDD9631DD9BBA3004975F3 /* Milkyway */,
+				1DBDD97D1DD9BBA4004975F3 /* MilkywayTests */,
+				1DBDD9881DD9BBA4004975F3 /* MilkywayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DBDD9621DD9BBA3004975F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DAE1DCF1DE7646000D98D9C /* ShipTrail.sks in Resources */,
+				1D4F0AE71DE05F3B00D41ACF /* blowBrush.ttf in Resources */,
+				1DFEE36B1E281ACB00F51A85 /* backgroundMusic.m4a in Resources */,
+				1D3F03CB1DF097F9006C4A1B /* BigExplosion.sks in Resources */,
+				1DA732961DECC82B0080651A /* MenusBackground.sks in Resources */,
+				1D4F0AE31DE05D4900D41ACF /* theBoldFont.ttf in Resources */,
+				1DBDD9731DD9BBA4004975F3 /* Main.storyboard in Resources */,
+				1DAE1DD11DE8591A00D98D9C /* Explosion.sks in Resources */,
+				1DBDD96A1DD9BBA4004975F3 /* GameScene.sks in Resources */,
+				1DBDD9751DD9BBA4004975F3 /* Assets.xcassets in Resources */,
+				1DBDD9781DD9BBA4004975F3 /* LaunchScreen.storyboard in Resources */,
+				1DBDD96C1DD9BBA4004975F3 /* Actions.sks in Resources */,
+				1DAE1DCB1DE7629600D98D9C /* MovingStars.sks in Resources */,
+				1DE25E121E2FBC2A000B0176 /* bulletEffect.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBDD97C1DD9BBA4004975F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBDD9871DD9BBA4004975F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DBDD9601DD9BBA3004975F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8D93231DDE05EE00748FFE /* MainMenuScene.swift in Sources */,
+				1DA7329C1DEDC2920080651A /* PauseMenuScene.swift in Sources */,
+				1DBDD96E1DD9BBA4004975F3 /* GameScene.swift in Sources */,
+				1DA732981DED86D20080651A /* SettingsMenuScene.swift in Sources */,
+				1DBDD9701DD9BBA4004975F3 /* GameViewController.swift in Sources */,
+				1DBDD9681DD9BBA4004975F3 /* AppDelegate.swift in Sources */,
+				1DEF00721E0297200082C975 /* InstructionsMenuScene.swift in Sources */,
+				1D8D93211DDDAFC900748FFE /* GameOverScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBDD97A1DD9BBA4004975F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBDD9831DD9BBA4004975F3 /* Milky_Way_MeltdownTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBDD9851DD9BBA4004975F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBDD98E1DD9BBA4004975F3 /* Milky_Way_MeltdownUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DBDD9801DD9BBA4004975F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DBDD9631DD9BBA3004975F3 /* Milkyway */;
+			targetProxy = 1DBDD97F1DD9BBA4004975F3 /* PBXContainerItemProxy */;
+		};
+		1DBDD98B1DD9BBA4004975F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DBDD9631DD9BBA3004975F3 /* Milkyway */;
+			targetProxy = 1DBDD98A1DD9BBA4004975F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DBDD9711DD9BBA4004975F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBDD9721DD9BBA4004975F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DBDD9761DD9BBA4004975F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBDD9771DD9BBA4004975F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBDD9901DD9BBA4004975F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DBDD9911DD9BBA4004975F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DBDD9931DD9BBA4004975F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9AB7L7MV4X;
+				INFOPLIST_FILE = "Milky Way Meltdown/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KleitDuka.Milky-Way-Meltdown";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1DBDD9941DD9BBA4004975F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9AB7L7MV4X;
+				INFOPLIST_FILE = "Milky Way Meltdown/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KleitDuka.Milky-Way-Meltdown";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1DBDD9961DD9BBA4004975F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9AB7L7MV4X;
+				INFOPLIST_FILE = "Milky Way MeltdownTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KleitDuka.Milky-Way-MeltdownTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Milkyway.app/Milkyway";
+			};
+			name = Debug;
+		};
+		1DBDD9971DD9BBA4004975F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9AB7L7MV4X;
+				INFOPLIST_FILE = "Milky Way MeltdownTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KleitDuka.Milky-Way-MeltdownTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Milkyway.app/Milkyway";
+			};
+			name = Release;
+		};
+		1DBDD9991DD9BBA4004975F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9AB7L7MV4X;
+				INFOPLIST_FILE = "Milky Way MeltdownUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KleitDuka.Milky-Way-MeltdownUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Milky Way Meltdown";
+			};
+			name = Debug;
+		};
+		1DBDD99A1DD9BBA4004975F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9AB7L7MV4X;
+				INFOPLIST_FILE = "Milky Way MeltdownUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KleitDuka.Milky-Way-MeltdownUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Milky Way Meltdown";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBDD95F1DD9BBA3004975F3 /* Build configuration list for PBXProject "Milkyway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBDD9901DD9BBA4004975F3 /* Debug */,
+				1DBDD9911DD9BBA4004975F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBDD9921DD9BBA4004975F3 /* Build configuration list for PBXNativeTarget "Milkyway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBDD9931DD9BBA4004975F3 /* Debug */,
+				1DBDD9941DD9BBA4004975F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBDD9951DD9BBA4004975F3 /* Build configuration list for PBXNativeTarget "MilkywayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBDD9961DD9BBA4004975F3 /* Debug */,
+				1DBDD9971DD9BBA4004975F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBDD9981DD9BBA4004975F3 /* Build configuration list for PBXNativeTarget "MilkywayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBDD9991DD9BBA4004975F3 /* Debug */,
+				1DBDD99A1DD9BBA4004975F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DBDD95C1DD9BBA3004975F3 /* Project object */;
+}
